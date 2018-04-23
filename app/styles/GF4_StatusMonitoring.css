@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.GF4_BG{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/public/bg.png);
+    background-size: 100% 100%;
+}
+
+/*自动监视按钮*/
+.automatic{
+    position: absolute;
+    right: 20%;
+    top: 90px;
+}
+
+/*日历样式*/
+#sv-datarangepicker-input{
+    width: 150px;
+    position: absolute;
+    right: 5%;
+    top: 90px;
+    text-align: center;
+    background-color: rgba(113,226,255,0.2);
+    color: #eeeeee;
+}
+
+@media screen and (min-width:1800px){
+    /*标题部分*/
+    .GF4S_Title{
+        width: 100%;
+        height: 16.5%;
+        background-image: url(/public/header.png);
+        background-size: 100% 100%;
+    }
+
+    /*接收中计划*/
+    .GF4S_Reception{
+        width: 100%;
+        height: 40%;
+        margin-bottom: 1.5%;
+    }
+
+    .GF4S_R{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 100%;
+        border-radius: 20px;
+        background-image: url(/public/dataBg.png);
+        background-size: 100% 100%;
+        padding-top: 30px;
+    }
+
+    /*接收中计划表格*/
+    .table{
+        margin-bottom: 0;
+        filter: Alpha(opacity=20);/* 只支持IE6、7、8、9 */
+    }
+
+    .table thead{
+        height: 50px;
+        line-height: 1;
+        box-shadow: #212424 0 0 50px;
+        background-color: rgba(113,226,255,0.2);
+    }
+
+    .table thead tr th{
+        border: 0;
+        border-right: 1px solid #b2b2b2;
+        font-size: 1.5rem;
+        color: #ffffff;
+        position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值，保证字体颜色不透明 */
+        white-space:nowrap;
+        text-align: center;
+        vertical-align:middle
+    }
+
+    .table tbody{
+        height: 80px;
+        opacity: 0.8;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .table tbody tr td{
+        border: 0;
+        font-size: 1.5rem;
+        color: #ffffff;
+        position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值，保证字体颜色不透明 */
+        white-space:nowrap;
+        text-align: center;
+        vertical-align:middle;
+        height: 60px;
+    }
+
+    /*已完成计划*/
+    .GF4S_Completed{
+        width: 100%;
+        height: 40%;
+    }
+
+    /*已完成计划顶部*/
+    .Completed_header{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 20%;
+        background-image: url(/public/Completed_header.png);
+        background-size: 100% 100%;
+    }
+
+    .Completed_header >p{
+        font-size: 30px;
+        color: #eeeeee;
+        display: inline-block;
+        float: left;
+        height: 100%;
+        line-height: 100%;
+        padding-top: 20px;
+        padding-left: 20%;
+    }
+
+    .buttonData{
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .buttonLeft{
+        background-image: url(/public/buttonLeft.png);
+        background-size: 100% 100%;
+        float: left;
+        margin-left: 30%;
+    }
+
+    .buttonRight{
+        background-image: url(/public/buttonRight.png);
+        background-size: 100% 100%;
+        float: left;
+        margin-left: 5%;
+    }
+
+    /*已完成计划表格*/
+    .GF4S_C{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 80%;
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        background-image: url(/public/dataBg2.png);
+        background-size: 100% 100%;
+        background-color: #033b4a;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:1800px){
+    .table td, .table th{
+        padding: .4rem;
+    }
+
+    .table thead tr th{
+        border: 0;
+        border-right: 1px solid #b2b2b2;
+        font-size: 1rem;
+        color: #ffffff;
+        position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值，保证字体颜色不透明 */
+        white-space:nowrap;
+        text-align: center;
+        vertical-align:middle
+    }
+
+    .buttonLeft{
+        background-image: url(/public/buttonLeft.png);
+        background-size: 100% 100%;
+        float: left;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+
+    /*标题部分*/
+    .GF4S_Title{
+        width: 100%;
+        height: 16.5%;
+        background-image: url(/public/header1024.png);
+        background-size: 100% 100%;
+    }
+
+    /*接收中计划*/
+    .GF4S_Reception{
+        width: 100%;
+        height: 40%;
+        margin-bottom: 1.5%;
+    }
+
+    .GF4S_R{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 100%;
+        border-radius: 20px;
+        background-image: url(/public/dataBg.png);
+        background-size: 100% 100%;
+        padding-top: 30px;
+    }
+
+    /*接收中计划表格*/
+    .table{
+        margin-bottom: 0;
+        filter: Alpha(opacity=20);/* 只支持IE6、7、8、9 */
+    }
+
+    .table thead{
+        height: 50px;
+        line-height: 1;
+        box-shadow: #212424 0 0 50px;
+        background-color: rgba(113,226,255,0.2);
+    }
+
+
+
+    .table tbody{
+        height: 80px;
+        opacity: 0.8;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .table tbody tr td{
+        border: 0;
+        font-size: 1.5rem;
+        color: #ffffff;
+        position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值，保证字体颜色不透明 */
+        white-space:nowrap;
+        text-align: center;
+        vertical-align:middle;
+        height: 60px;
+    }
+
+    /*已完成计划*/
+    .GF4S_Completed{
+        width: 100%;
+        height: 40%;
+    }
+
+    /*已完成计划顶部*/
+    .Completed_header{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 20%;
+        background-image: url(/public/Completed_header1024.png);
+        background-size: 100% 100%;
+    }
+
+    .Completed_header >p{
+        font-size: 30px;
+        color: #eeeeee;
+        display: inline-block;
+        float: left;
+        height: 100%;
+        line-height: 100%;
+        padding-top: 15px;
+        padding-left: 23%;
+    }
+
+    .buttonData{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+
+
+    .buttonRight{
+        background-image: url(/public/buttonRight.png);
+        background-size: 100% 100%;
+        float: left;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+
+    /*已完成计划表格*/
+    .GF4S_C{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 80%;
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        background-image: url(/public/dataBg2.png);
+        background-size: 100% 100%;
+        background-color: #033b4a;
+        padding-top: 30px;
+    }
+}
